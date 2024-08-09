@@ -81,6 +81,10 @@ body {
   flex: 1;
   border-radius: 15px 0 0 15px;
 }
+
+.mobile-img {
+  display: none;
+}
 .content {
   padding: 40px 40px;
   flex: 1;
@@ -148,8 +152,6 @@ button:hover {
   background-color: #194031;
   cursor: pointer;
 }
-button > img {
-}
 
 @media screen and (width < 820px) {
   .card {
@@ -167,6 +169,13 @@ button > img {
     border-radius: 15px 15px 0 0;
   }
 
+  .mobile-img {
+    display: block;
+  }
+
+  .desktop-img {
+    display: none;
+  }
   .content {
     padding: 25px 30px;
   }
